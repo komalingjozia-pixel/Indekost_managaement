@@ -60,6 +60,7 @@ function DashboardPage() {
         <StatCard label="Pembayaran Lunas" value={data?.pembayaran_lunas ?? 0} icon={FiCheckCircle} accent="green" />
         <StatCard label="Belum Lunas" value={data?.pembayaran_belum_lunas ?? 0} icon={FiAlertCircle} accent="amber" />
         <StatCard
+   
           label="Pendapatan Bulan Ini"
           value={formatRupiah(data?.total_pendapatan_bulan_ini || 0)}
           icon={FiDollarSign}
